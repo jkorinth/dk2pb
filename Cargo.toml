@@ -1,0 +1,20 @@
+[package]
+name = "dk2pb"
+version = "0.1.0"
+edition = "2024"
+license = "GPL-3.0-or-later"
+
+[dependencies]
+anyhow = "1.0.105"
+chrono = { version = "0.4.45", features = ["serde"] }
+clap = { version = "4.6.10", features = ["derive"] }
+dirs = "7.0.0"
+image = { version = "0.25.10", default-features = false, features = ["gif", "jpeg", "png", "webp"] }
+nucleo-matcher = "0.3.1"
+open = "5.4.5"
+ratatui = "0.30"
+ratatui-image = { version = "11", default-features = false, features = ["crossterm"] }
+reqwest = { version = "0.13.5", default-features = false, features = ["blocking", "json", "multipart", "rustls", "query", "form"] }
+serde = { version = "1.0.229", features = ["derive"] }
+serde_json = "1.0.154"
+toml = "1.2.3"
