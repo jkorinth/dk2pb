@@ -3,6 +3,8 @@ name: release-please
 on:
   push:
     branches: [main]
+  # Lets you re-run the release check from the Actions tab without a new commit.
+  workflow_dispatch:
 
 permissions:
   contents: write
